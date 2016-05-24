@@ -16,7 +16,7 @@
         <dependency>
             <groupId>com.epam.jdi</groupId>
             <artifactId>jdi-uitest-web</artifactId>
-            <version>RELEASE</version>
+            <version>1.0.6</version>
         </dependency>
     </dependencies>
 
