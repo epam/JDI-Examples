@@ -1,4 +1,4 @@
-package org.mytests;
+package org.mytests.tests;
 
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 import java.io.IOException;
 import java.lang.reflect.Method;
 
-import static org.mytests.EpamSite.*;
+import static org.mytests.uiobjects.EpamSite.*;
 import static org.mytests.enums.HeaderMenu.CAREERS;
 
 /**

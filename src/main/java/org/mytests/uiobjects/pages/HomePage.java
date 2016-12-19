@@ -1,4 +1,4 @@
-package org.mytests.pages;
+package org.mytests.uiobjects.pages;
 
 import com.epam.jdi.uitests.web.selenium.elements.composite.WebPage;
 
