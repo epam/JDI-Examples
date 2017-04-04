@@ -1,10 +1,10 @@
-package org.mytests.uiobjects.pages;
+package org.mytests.uiobjects.epam.pages;
 
 import com.epam.jdi.uitests.web.selenium.elements.composite.WebPage;
 
 /**
  * Created by Roman_Iovlev on 10/22/2015.
  */
-public class HomePage extends WebPage {
+public class CareerPage extends WebPage {
 
 }

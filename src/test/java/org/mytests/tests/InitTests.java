@@ -3,7 +3,8 @@ package org.mytests.tests;
 import com.epam.jdi.uitests.web.selenium.elements.composite.WebSite;
 import com.epam.jdi.uitests.web.testng.testRunner.TestNGBase;
 import com.epam.web.matcher.verify.Verify;
-import org.mytests.uiobjects.EpamSite;
+import org.mytests.uiobjects.epam.EpamSite;
+import org.mytests.uiobjects.w3c.W3CSite;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeSuite;
 
@@ -18,7 +19,7 @@ public class InitTests extends TestNGBase {
     @BeforeSuite(alwaysRun = true)
     public static void setUp() throws Exception {
         WebSite.init(EpamSite.class);
-        Verify.getFails();
+        WebSite.init(W3CSite.class);
         logger.info("Run Tests");
     }
 
