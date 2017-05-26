@@ -17,6 +17,7 @@ public class FrameTest extends InitTests {
     public void before(Method method) {
         dropDownPage.shouldBeOpened();
     }
+
     @Test
     public void jDropdownExample() {
         dropDownPage.frame.cars.select("Saab");

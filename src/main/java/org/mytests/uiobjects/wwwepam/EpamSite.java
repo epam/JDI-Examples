@@ -1,12 +1,12 @@
-package org.mytests.uiobjects.epam;
+package org.mytests.uiobjects.wwwepam;
 
 import com.epam.jdi.uitests.web.selenium.elements.complex.Menu;
 import com.epam.jdi.uitests.web.selenium.elements.composite.WebSite;
 import com.epam.jdi.uitests.web.selenium.elements.pageobjects.annotations.JPage;
 import com.epam.jdi.uitests.web.selenium.elements.pageobjects.annotations.JSite;
-import org.mytests.enums.HeaderMenu;
+import org.mytests.uiobjects.wwwepam.enums.HeaderMenu;
 import org.openqa.selenium.support.FindBy;
-import org.mytests.uiobjects.epam.pages.*;
+import org.mytests.uiobjects.wwwepam.pages.*;
 
 /**
  * Created by Roman_Iovlev on 8/30/2015.

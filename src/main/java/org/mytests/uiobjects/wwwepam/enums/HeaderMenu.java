@@ -1,4 +1,4 @@
-package org.mytests.enums;
+package org.mytests.uiobjects.wwwepam.enums;
 
 /**
  * Created by Roman_Iovlev on 10/22/2015.
