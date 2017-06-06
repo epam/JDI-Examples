@@ -9,6 +9,7 @@ import org.mytests.uiobjects.example.entities.User;
 import org.mytests.uiobjects.example.pages.HomePage;
 import org.mytests.uiobjects.example.pages.LoginForm;
 import org.openqa.selenium.support.FindBy;
+import ru.yandex.qatools.allure.annotations.Step;
 
 /**
  * Created by Roman_Iovlev on 8/30/2015.
@@ -22,6 +23,7 @@ public class JDIExampleSite extends WebSite {
     @FindBy(css = ".profile-photo")
     public static Label profilePhoto;
 
+    @Step
     public static void login() {
         profilePhoto.click();
         loginForm.loginAs(new User());

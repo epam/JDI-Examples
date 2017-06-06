@@ -20,6 +20,7 @@ public class SmokeTest extends InitTests {
         homePage.shouldBeOpened();
         headerMenu.select(CAREERS);
         careerPage.checkOpened();
+        careerPage.keywords.newInput("Test Automation");
     }
 
 }
