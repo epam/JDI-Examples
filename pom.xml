@@ -10,7 +10,7 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <jdi.version>1.0.65</jdi.version>
+        <jdi.version>1.0.71</jdi.version>
         <allure.version>1.4.23</allure.version>
         <aspectj.version>1.8.5</aspectj.version>
     </properties>

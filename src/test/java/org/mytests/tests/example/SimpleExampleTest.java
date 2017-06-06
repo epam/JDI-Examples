@@ -10,8 +10,8 @@ import static org.mytests.uiobjects.example.JDIExampleSite.*;
 public class SimpleExampleTest extends SimpleTestsInit {
     @Test
     public void loginExample() {
-        loginPage.open();
-        loginPage.login();
+        homePage.open();
+        login();
         homePage.checkOpened();
     }
 }
