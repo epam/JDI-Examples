@@ -85,7 +85,7 @@
             <plugin>
                 <groupId>ru.yandex.qatools.allure</groupId>
                 <artifactId>allure-maven-plugin</artifactId>
-                <version>2.2</version>
+                <version>LATEST</version>
             </plugin>
         </plugins>
     </reporting>
