@@ -7,13 +7,12 @@ import org.testng.annotations.BeforeSuite;
 
 import static com.epam.jdi.uitests.core.settings.JDISettings.logger;
 
-
 /**
  * Created by Roman_Iovlev on 7/13/2015.
  */
 public class SimpleTestsInit extends TestNGBase {
     @BeforeSuite(alwaysRun = true)
-    public static void setUp() throws Exception {
+    public static void setUp() {
         WebSite.init(JDIExampleSite.class);
         logger.info("Run Tests");
     }
