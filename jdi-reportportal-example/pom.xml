@@ -12,42 +12,31 @@
     <artifactId>jdi-reportportal-example</artifactId>
 
     <repositories>
-    <repository>
-    <id>bintray-epam-reportportal</id>
-    <name>bintray</name>
-    <url>http://dl.bintray.com/epam/reportportal</url>
-    </repository>
-    </repositories>
-
-    <pluginRepositories>
-        <pluginRepository>
-            <snapshots>
-                <enabled>false</enabled>
-            </snapshots>
+        <repository>
             <id>bintray-epam-reportportal</id>
             <name>bintray</name>
             <url>http://dl.bintray.com/epam/reportportal</url>
-        </pluginRepository>
-    </pluginRepositories>
+        </repository>
+    </repositories>
 
     <dependencies>
         <!--Report portal-->
-        <!--<dependency>-->
-        <!--<groupId>com.epam.reportportal</groupId>-->
-        <!--<artifactId>logger-java-log4j</artifactId>-->
-        <!--<version>3.0.0</version>-->
-        <!--</dependency>-->
+        <dependency>
+            <groupId>com.epam.reportportal</groupId>
+            <artifactId>logger-java-log4j</artifactId>
+            <version>3.0.0</version>
+        </dependency>
         <dependency>
             <groupId>com.epam.reportportal</groupId>
             <artifactId>agent-java-testng</artifactId>
             <version>3.0.0</version>
         </dependency>
 
-        <!--<dependency>-->
-        <!--<groupId>org.testng</groupId>-->
-        <!--<artifactId>testng</artifactId>-->
-        <!--<version>6.11</version>-->
-        <!--</dependency>-->
+        <dependency>
+            <groupId>org.testng</groupId>
+            <artifactId>testng</artifactId>
+            <version>6.11</version>
+        </dependency>
     </dependencies>
 
     <build>
@@ -56,19 +45,8 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>2.15</version>
-                <dependencies>
-                    <dependency>
-                        <groupId>com.epam.reportportal</groupId>
-                        <artifactId>agent-java-testng</artifactId>
-                        <version>3.0.0</version>
-                    </dependency>
-                    <dependency>
-                        <groupId>com.epam.reportportal</groupId>
-                        <artifactId>logger-java-log4j</artifactId>
-                        <version>3.0.0</version>
-                    </dependency>
-                </dependencies>
                 <configuration>
+                    <testFailureIgnore>true</testFailureIgnore>
                     <properties>
                         <property>
                             <name>usedefaultlisteners</name>
@@ -83,6 +61,5 @@
             </plugin>
         </plugins>
     </build>
-
 
 </project>
