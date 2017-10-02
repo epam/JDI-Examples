@@ -9,10 +9,11 @@
     <version>1.0-SNAPSHOT</version>
     <name>My Resources Plugin Practice Project</name>
 
+    <packaging>pom</packaging>
+
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <jdi.version>1.0.71</jdi.version>
-        <allure.version>1.4.23</allure.version>
         <aspectj.version>1.8.5</aspectj.version>
         <driver>chrome</driver>
     </properties>
@@ -37,27 +38,6 @@
                 <target>1.8</target>
             </configuration>
             </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-surefire-plugin</artifactId>
-                <version>2.19.1</version>
-                <configuration>
-                    <suiteXmlFiles>
-                        <suiteXmlFile>src/test/resources/general.xml</suiteXmlFile>
-                    </suiteXmlFiles>
-                    <testFailureIgnore>true</testFailureIgnore>
-                    <argLine>
-                        -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"
-                    </argLine>
-                </configuration>
-                <dependencies>
-                    <dependency>
-                        <groupId>org.aspectj</groupId>
-                        <artifactId>aspectjweaver</artifactId>
-                        <version>${aspectj.version}</version>
-                    </dependency>
-                </dependencies>
-            </plugin>
 
             <plugin>
                 <groupId>ru.yandex.qatools.allure</groupId>
@@ -76,6 +56,10 @@
         <resources>
             <resource>
                 <directory>jdi-allure-example/src/test/resources</directory>
+                <filtering>true</filtering>
+            </resource>
+            <resource>
+                <directory>jdi-reportportal-example/src/test/resources</directory>
                 <filtering>true</filtering>
             </resource>
         </resources>
