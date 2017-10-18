@@ -2,14 +2,10 @@
 .idea/
 target/
 *.zip
+*.exe
 .logs/
-*.xlsx
-*.html
 bin/
 obj/
 .vs/
 packages/
-*.nupkg
-*.nuspec
-*.exe
-temp/
+test-output/
