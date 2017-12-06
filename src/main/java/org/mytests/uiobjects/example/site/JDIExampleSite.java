@@ -9,7 +9,7 @@ import org.mytests.uiobjects.example.site.sections.LoginForm;
 import org.openqa.selenium.support.FindBy;
 import ru.yandex.qatools.allure.annotations.Step;
 
-@JSite(domain = "https://epam.github.io/JDI/")
+@JSite("https://epam.github.io/JDI/")
 public class JDIExampleSite extends WebSite {
     public static HomePage homePage;
 
